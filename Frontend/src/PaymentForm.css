@@ -1,0 +1,197 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.payment-form-page {
+  min-height: 100vh;
+  min-width: 100vw;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #f8fafc;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  box-sizing: border-box;
+  /* overflow: hidden; */
+}
+
+/* Optionally, add a little gap between elements for better vertical spacing */
+.payment-form-page > * {
+  margin-bottom: 0.5rem;
+}
+.payment-form-card {
+  margin-bottom: 0;
+}
+
+.payment-form-split {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background: #f8fafc;
+}
+
+.payment-form-left {
+  flex: 1;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2vw;
+}
+
+.payment-form-logo {
+  width: 110px;
+  height: 110px;
+  object-fit: contain;
+  margin-bottom: 18px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(30, 64, 175, 0.06);
+}
+
+.payment-form-company {
+  font-size: 2.3rem;
+  font-weight: 800;
+  color: #1a237e;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.payment-form-quote {
+  font-size: 1.15rem;
+  color: #607d8b;
+  margin-bottom: 0;
+  text-align: center;
+  font-style: italic;
+  font-weight: 400;
+  margin-top: 8px;
+}
+
+.payment-form-right {
+  flex: 1;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2vw;
+}
+
+.payment-form-card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(30, 64, 175, 0.16);
+  padding: 36px 32px 28px 32px;
+  max-width: 420px;
+  width: 100%;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin-bottom: 0;
+  box-sizing: border-box;
+}
+
+.payment-form-title {
+  text-align: center;
+  margin-bottom: 22px;
+  color: #1a237e;
+  font-size: 1.45rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.payment-form-form label {
+  display: block;
+  margin-bottom: 6px;
+  color: #374151;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.payment-form-form input {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 16px;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 1rem;
+  background: #f9fafb;
+  transition: border 0.2s, box-shadow 0.2s;
+  color: #111;
+}
+
+.payment-form-form input:focus {
+  border: 1.5px solid #1a73e8;
+  outline: none;
+  box-shadow: 0 0 0 2px #e3eaff;
+  background: #fff;
+}
+
+.payment-form-form button {
+  width: 100%;
+  padding: 12px 0;
+  background: #1976d2;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.08rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(26,115,232,0.08);
+}
+
+.payment-form-form button:hover,
+.payment-form-form button:focus {
+  background: #174ea6;
+  box-shadow: 0 4px 16px rgba(26,115,232,0.15);
+}
+
+.payment-form-watermark {
+  font-size: 0.98rem;
+  color: #888;
+  opacity: 0.7;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin-top: 18px;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .payment-form-split {
+    flex-direction: column;
+    height: auto;
+    min-height: 100vh;
+  }
+  .payment-form-left, .payment-form-right {
+    flex: unset;
+    width: 100vw;
+    min-width: 0;
+    min-height: unset;
+    padding: 32px 4vw;
+  }
+  .payment-form-logo {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 12px;
+  }
+  .payment-form-company {
+    font-size: 1.3rem;
+  }
+  .payment-form-quote {
+    font-size: 0.98rem;
+    margin-bottom: 18px;
+  }
+  .payment-form-card {
+    max-width: 98vw;
+    padding: 18px 4vw 16px 4vw;
+  }
+} 
